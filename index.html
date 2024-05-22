@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Usuário</title>
+</head>
+<body>
+  <h1>Cadastro de Usuário</h1>
+  <form id="cadastroForm">
+    <label for="primeiroNome">Nome:</label>
+    <input type="text" id="primeiroNome" name="primeiroNome" required><br><br>
+
+    <label for="segundoNome">Sobrenome:</label>
+    <input type="text" id="segundoNome" name="segundoNome" required><br><br>
+
+    <label for="emailUsuario">Email:</label>
+    <input type="email" id="emailUsuario" name="emailUsuario" required><br><br>
+
+    <label for="senhaHash">Senha:</label>
+    <input type="password" id="senhaHash" name="senhaHash" required><br><br>
+
+    <button type="submit">Cadastrar</button>
+  </form>
+
+  <div id="mensagem"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="User/cadastro.js"></script>
+</body>
+</html>
